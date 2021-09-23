@@ -1,6 +1,7 @@
 # Free SMS OTP
 ## Description
 A library that allows you to send and check OTP(One Time Password) via sms for free using [Textbelt](https://textbelt.com/)
+![SMS EXAMPLE](https://sun9-19.userapi.com/impg/VfytbmzH9CMZAAiGSxcVqj8CN4TxliKYdXrokA/fqdxUlj1Vm0.jpg?size=738x705&quality=96&sign=3ad041eea11a079199cbe99b0d16def3&type=album)
 ## Installation
     pip install free_sms_otp
 ## Usage
@@ -45,9 +46,10 @@ A library that allows you to send and check OTP(One Time Password) via sms for f
     {'success': True, 'isValidOtp': False}
 ##### If fails
     {'success': False}
-## Example:
+## [Example](https://gist.github.com/QwertyQwertovich/91ff2746891e6b9edfb85726b29ce13a)
+
     from free_sms_otp import generate_pass, check_pass
-    
+        
     userid = "a@a.a"
     ans = generate_pass("+79998887766", userid, is_test=True, length=4,
                         proxy=["91.229.67.77:8080", "113.161.186.101:8080", "180.178.189.78:3127", "103.7.27.186:8080"],
